@@ -1,0 +1,134 @@
+html *
+{
+
+   font-family: 'Trebuchet MS';
+}
+
+body {
+  padding-top: 70px;
+}
+
+.hello .row {
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 20px;
+}
+
+.img-rounded {
+  max-width: 240px;
+  margin-bottom: 10px;
+}
+
+.home-profile-name {
+  padding-top: 20px;
+}
+
+p.about-me-text {
+  padding-right: 30px;
+}
+
+p.education-year {
+  float: right;
+}
+
+h2.sub-title-1 {
+  color: #111111;
+  font-size: 20px;
+  display: inline;
+}
+
+h2.sub-title-location {
+  color: #111111;
+  font-size: 15px;
+  text-align: right;
+  display: inline;
+  float: right;
+  /* padding-right: 20px; */
+}
+
+h2.title-dates {
+  color: #888888;
+  font-size: 20px;
+  text-align: right;
+  float: right;
+  /* padding-right: 20px; */
+}
+
+h2.title-school {
+  color: #111111;
+  font-size: 30px;
+}
+
+.navbar-custom {
+  background-color: #1ee884; 
+  border-color: #E7E7E7;
+  
+}
+
+.navbar .navbar-text {
+  color: rgba(255,255,255,.8);
+}
+/* change the link color */
+.navbar .navbar-nav .nav-link {
+  color: rgba(0,0,0, 1.0);
+}
+
+#rectangle{
+  width:5px;
+  height:30px;
+  background:blue;
+  display: flex;
+    justify-content: center;
+}
+
+a {
+  color: #1ee884;
+}
+
+.bullet-title-01{
+  color: #1ee884;
+  font-weight: bold;
+}
+
+.description-01 {
+  margin-top: 10px;
+}
+
+.rectangle-education{
+  width:175px;
+  height:5px;
+  background:#1ee884;
+  margin-top: 30px;
+  margin-bottom: 3px;
+}
+
+.rectangle-about{
+  width:165px;
+  height:5px;
+  background:#1ee884;
+  margin-bottom: 3px;
+}
+
+.rectangle-experiences{
+  width:213px;
+  height:5px;
+  background:#1ee884;
+  margin-bottom: 3px;
+  margin-top: 30px;
+}
+
+.img-thumbnail {
+  border-radius: 20px;
+  border: 0;
+  margin-bottom: 5px;
+  }
+
+#education-scroll {
+  padding-bottom: 40px;
+  margin-top: -40px;
+}
+
+#experiences-scroll {
+  padding-bottom: 40px;
+  margin-top: -40px;
+}
