@@ -117,11 +117,25 @@ a {
   margin-top: 30px;
 }
 
+.rectangle-skills{
+  width:90px;
+  height:5px;
+  background:#1ee884;
+  margin-bottom: 3px;
+  margin-top: 30px;
+}
+
 .img-thumbnail {
   border-radius: 20px;
   border: 0;
   margin-bottom: 5px;
-  }
+}
+
+.img-fluid {
+  max-width: 140px;
+  max-height: 140px;
+  padding-left: 4px;
+}
 
 #education-scroll {
   padding-bottom: 40px;
@@ -131,4 +145,18 @@ a {
 #experiences-scroll {
   padding-bottom: 40px;
   margin-top: -40px;
+}
+
+#skills-scroll {
+  padding-bottom: 40px;
+  margin-top: -40px;
+}
+
+.skills-title {
+  font-size: 22px;
+  text-align: center;
+}
+
+.skills-div {
+  padding-left: 30px;
 }

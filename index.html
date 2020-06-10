@@ -14,33 +14,35 @@
     <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom styles for this template -->
     <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/carousel.css" rel="stylesheet">
+
   </head>
 
   <body>
     <nav class="navbar font-weight-bold navbar-light navbar-expand-sm justify-content-between fixed-top" style="background-color: #1ee884;">
-        <div class="container">
-            <div class="navbar-header"><span id="id_name_of_site" class="navbar-brand">Chen Mo</span></div>
+      <div class="container">
+          <div class="navbar-header"><span id="id_name_of_site" class="navbar-brand">Chen Mo</span></div>
+      
+          <div class="collapse navbar-collapse" id="navbar-buttons">
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+                  <a class="nav-link" href="">About<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#education-scroll">Education</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#experiences-scroll">Experiences</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#skills-scroll">Skills</a>
+                </li>
+              </ul>
+            </div>
+      </div>
         
-            <div class="collapse navbar-collapse" id="navbar-buttons">
-                <ul class="navbar-nav">
-                  <li class="nav-item active">
-                    <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#education-scroll">Education</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#experiences-scroll">Experiences</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Education</a>
-                  </li>
-                </ul>
-              </div>
-        </div>
         
-        
-    </nav>
+    </nav><!-- nav -->
 
     <div class="container hello">
       <div class="row">
@@ -63,7 +65,7 @@
                 <path d="M2.5 11h1v1h-1v-1zm2 0h1v1h-1v-1zm-2 2h1v1h-1v-1zm2 0h1v1h-1v-1zm6-10h1v1h-1V3zm2 0h1v1h-1V3zm-4 2h1v1h-1V5zm2 0h1v1h-1V5zm2 0h1v1h-1V5zm-2 2h1v1h-1V7zm2 0h1v1h-1V7zm-4 0h1v1h-1V7zm0 2h1v1h-1V9zm2 0h1v1h-1V9zm2 0h1v1h-1V9zm-4 2h1v1h-1v-1zm2 0h1v1h-1v-1zm2 0h1v1h-1v-1z"/>
               </svg>
             <span>&nbsp;Santa Clara, CA</span></br>
-        </div>
+        </div><!-- col-sm-3 -->
         <div class="col-xs-12 col-sm-9">
           <div class="rectangle-about"></div>
 
@@ -76,144 +78,283 @@
             In Summer 2020, I will be joining Hulu as a Software Engineering Intern, working on DevOps in the Networks team.
           </p>
           
+        </div><!-- col-sm-9 -->
+      </div>
+    
+
+    <div class="container education">
+      <div id="education-scroll"></div>
+      <div class="rectangle-education"></div>
+      <h1>Education</h1>
+      <p class="lead">As of June 2020, I am a Master's student at Carnegie Mellon University. I am expecting to graduate in May 2021.</p>
+
+      <div class="row">
+        <div class="col-sm-8 col-md-9 col-xs-12">
+          <h2 class=title-school>Carnegie Mellon University:<small> Aug 2019 - Present</small></h2>
+          <h2 class="sub-title-1">Master of Science in Information Technology - Mobility</h2></br>
+
+          <p class="description-01">The <a href="https://www.cmu.edu/ini/academics/bicoastal/index.html">MSIT-MOB</a> degree is a bicoastal degree at the <a href="https://www.cmu.edu/ini/">Information Networking Institute</a>
+              that requires us to study at CMU's Pittsburgh campus for the first year, and Silicon Valley's campus for the second year. 
+            It prepares us to be at the forefront of the mobility field with a multidisciplinary 
+            curriculum spanning topics in mobile applications, services, and devices.</p>
+          <ul>
+            <li><span class="bullet-title-01">Expected Graduation:</span> May 2021</li>
+            <li><span class="bullet-title-01">Core Courses:</span> 15-513 Intro to Computer Systems, 14-740 Fundamentals of Computer Networks, 14-741 Intro to Information Security, 17-637 Web Development, 17-781 Mobile & IoT Services</li>
+            <li><span class="bullet-title-01">GPA: 3.56</span></li>
+          </ul>
+        </div>
+        <div class="col-sm-4 col-md-3 hidden-xs">
+          <img class="img-thumbnail img-responsive center-block" src="assets/img/cmu-crest.jpg" alt="BNP Spatial Partition">
+        </div>
+      </div><!-- row -->
+
+      <hr>
+      <div class="row">
+        <div class="col-sm-8 col-sm-push-4 col-md-9 col-md-push-3 col-xs-12">
+          <h2 class=title-school>University of California, Irvine:<small> Sep 2015 - Mar 2019</small></h2>
+          <h2 class="sub-title-1">Bachelor of Science in Computer Science</h2>
+          <p class="description-01">During my studies at UCI, I mainly focused general topics in Computer Science. As a degree track preference,
+              I dug a bit more into areas related to intelligent systems such as Machine Learning and Computer Vision.
+          </p>
+          <ul>
+            <li><span class="bullet-title-01">Core Courses: </span>iOS Development, Machine Learning, Deep Learning, Computer Vision, Applied 
+              Probability and Statistics, Databases, Information Retrieval</li>
+            <li><span class="bullet-title-01">Major GPA: 3.73</span></li>
+          </ul>
         </div>
 
+        <div class="col-sm-4 col-sm-pull-8 col-md-3 col-md-pull-9 hidden-xs">
+          <img class="img-thumbnail img-responsive center-block" src="assets/img/uci-crest.jpg" alt="Graphical Model">
+        </div>
+        
+      </div><!-- row -->
+    </div>
 
-        <div class="container education">
-          <div id="education-scroll"></div>
-          <div class="rectangle-education"></div>
-          <h1>Education</h1>
-          <p class="lead">As of June 2020, I am a Master's student at Carnegie Mellon University. I am expecting to graduate in May 2021.</p>
-    
-          <div class="row">
-            <div class="col-sm-8 col-md-9 col-xs-12">
-              <h2 class=title-school>Carnegie Mellon University:<small> Aug 2019 - Present</small></h2>
-              <h2 class="sub-title-1">Master of Science in Information Technology - Mobility</h2></br>
-
-              <p class="description-01">The <a href="https://www.cmu.edu/ini/academics/bicoastal/index.html">MSIT-MOB</a> degree is a bicoastal degree at the <a href="https://www.cmu.edu/ini/">Information Networking Institute</a>
-                 that requires us to study at CMU's pittsburgh campus for the first year, and Mountain View's campus for the second year. 
-                It prepares us to be at the forefront of the mobility field with a multidisciplinary 
-                curriculum spanning topics in mobile applications, services, and devices.</p>
-              <ul>
-                <li><span class="bullet-title-01">Expected Graduation:</span> May 2021</li>
-                <li><span class="bullet-title-01">Core Courses:</span> 15-513 Intro to Computer Systems, 14-740 Fundamentals of Computer Networks, 14-741 Intro to Information Security, 17-637 Web Development, 17-781 Mobile & IoT Services</li>
-                <li><span class="bullet-title-01">GPA: 3.56</span></li>
-              </ul>
-            </div>
-            <div class="col-sm-4 col-md-3 hidden-xs">
-              <img class="img-thumbnail img-responsive center-block" src="assets/img/cmu-crest.jpg" alt="BNP Spatial Partition">
-            </div>
-          </div>
-    
-          <hr>
-          <div class="row">
-            <div class="col-sm-8 col-sm-push-4 col-md-9 col-md-push-3 col-xs-12">
-              <h2 class=title-school>University of California, Irvine:<small> Sep 2015 - Mar 2019</small></h2>
-              <h2 class="sub-title-1">Bachelor of Science in Computer Science</h2>
-              <p class="description-01">During my studies at UCI, I mainly focused general topics in Computer Science. As a degree track preference,
-                 I dug a bit more into areas related to intelligent systems such as Machine Learning and Computer Vision.
-              </p>
-              <ul>
-                <li><span class="bullet-title-01">Core Courses: </span>iOS Development, Machine Learning, Deep Learning, Computer Vision, Applied 
-                  Probability and Statistics, Databases, Information Retrieval</li>
-                <li><span class="bullet-title-01">Major GPA: 3.73</span></li>
-              </ul>
-            </div>
-
-            <div class="col-sm-4 col-sm-pull-8 col-md-3 col-md-pull-9 hidden-xs">
-              <img class="img-thumbnail img-responsive center-block" src="assets/img/uci-crest.jpg" alt="Graphical Model">
-            </div>
-            
-          </div>
+    <div class="container experiences">
+      <div id="experiences-scroll"></div>
+      <div class="rectangle-experiences"></div>
+      <h1>Experiences</h1>
+      <p class="lead">As of June 2020, I am working at Hulu as a Software Engineering Intern. My latest Industry experience was 
+        Software Engineering Intern at Xiaomi.
+      </p>
+  
+      <div class="row">
+        <div class="col-sm-4 col-md-3 hidden-xs">
+          <a href="https://www.hulu.com/jobs/university"><img class="img-thumbnail img-responsive center-block" src="assets/img/hulu-logo-green.png" alt="Hulu Logo"></a>
+        </div><!-- logo -->
+        
+        <div class="col-sm-8 col-md-9 col-xs-12">
+          <h2 class=title-school>Software Engineering Intern:<small> Jun 2020 - Present</small></h2>
+          <h2 class="sub-title-1">Hulu</h2>
+          <p class="description-01">Due to the COVID-19 pandemic, 
+            Hulu have shifted the internship program from a 12-week onsite summer program to an 8-week virtual program. 
+            Except the length, everything else remains the same for my internship, such as my team and responsibilities. 
+            My internship is scheduled to start on June 15th 2020.
+          </p>
+          <ul>
+            <li><span class="bullet-title-01">Location:</span> The internship location was originally planned for the Santa Monica Headquarters. 
+            Since my internship is going virtual, I will be working remotely from my home in Santa Clara.</li>
+            <li><span class="bullet-title-01">Team:</span>: I will be working on DevOps in the networks team. 
+              They build infrastructure and platforms that enable developers to build, automate, host and monitor their services in our data centers. </li>
+            <li><span class="bullet-title-01">Responsibilities:</span>: As far as I know, for the first module of my internship, I will be building
+                a CI/CD pipeline using Python.</li>
+          </ul>
+        </div><!-- hulu description -->
+      </div><!-- row -->
+  
+      <hr>
+      <div class="row">
+        <div class="col-sm-4 col-sm-pull-8 col-md-3 col-md-pull-9 hidden-xs">
+          <a href="https://www.mi.com/global/"><img class="img-thumbnail img-responsive center-block" src="assets/img/xiaomi-logo.png" alt="Xiaomi Logo"></a>
+        </div><!-- xiaomi logo -->
+        <div class="col-sm-8 col-sm-push-4 col-md-9 col-md-push-3 col-xs-12">
+          <h2 class=title-school>Software Engineering Intern:<small> May 2019 - Jul 2019</small></h2>
+          <h2 class="sub-title-1">Xiaomi</h2>
+          <p class="description-01">I worked for the Big Data Team under Xiaomi Cloud Division as a Software Engineering Intern. During my 9 weeks at 
+            <a href="https://www.mi.com/global/">Xiaomi</a>, 
+            I assited my team on processing and analyzing user activity data for 240+ million monthly active Xiaomi smartphone users, 
+            such as application usage data, user behavior data and advertisement exposure data.</br></br>
+            Some of my key contributions were:
+          </p>
+          <ul>
+            <li>Utilized user profiles and activities to run Spark jobs that generate advertising targets for Xiaomi app store publishers.</li>
+            <li>Collaborated with the advertising and business department to fit advertisement deploying schedules.</li>
+            <li>Increased the advertisement view/click rates by up to 15% for several big-name applications.</li>
+          </ul>
+          <p class="description-01">For my internship, I used various Big Data technologies/tools such as 
+            <span class="bullet-title-01">Spark, Hadoop, SQL and Hive.</span> My code was mainly written in <span class="bullet-title-01">Scala</span>.
+          </p>
+        </div><!-- xiaomi description -->
       </div>
 
-      <div class="container experiences">
-        <div id="experiences-scroll"></div>
-        <div class="rectangle-experiences"></div>
-        <h1>Experiences</h1>
-        <p class="lead">As of June 2020, I am working at Hulu as a Software Engineering Intern. My latest Industry experience was 
-          Software Engineering Intern at Xiaomi.
-        </p>
-  
-        <div class="row">
-          <div class="col-sm-4 col-md-3 hidden-xs">
-            <a href="https://www.hulu.com/jobs/university"><img class="img-thumbnail img-responsive center-block" src="assets/img/hulu-logo-green.png" alt="Hulu Logo"></a>
-          </div>
-
-          <div class="col-sm-8 col-md-9 col-xs-12">
-            <h2 class=title-school>Software Engineering Intern:<small> Jun 2020 - Present</small></h2>
-            <h2 class="sub-title-1">Hulu</h2>
-            <p class="description-01">Due to the COVID-19 pandemic, 
-              Hulu have shifted the internship program from a 12-week onsite summer program to an 8-week virtual program. 
-              Except the length, everything else remains the same for my internship, such as my team and responsibilities. 
-              My internship is scheduled to start on June 15th 2020.
-            </p>
-            <ul>
-              <li><span class="bullet-title-01">Location:</span> The internship location was originally planned for the Santa Monica Headquarters. 
-              Since my internship is going virtual, I will be working remotely from my home in Santa Clara.</li>
-              <li><span class="bullet-title-01">Team:</span>: I will be working on DevOps in the networks team. 
-                They build infrastructure and platforms that enable developers to build, automate, host and monitor their services in our data centers. </li>
-              <li><span class="bullet-title-01">Responsibilities:</span>: As far as I know, for the first module of my internship, I will be building
-                 a CI/CD pipeline using Python.</li>
-            </ul>
-          </div>
-        </div>
-  
-        <hr>
-        <div class="row">
-          <div class="col-sm-4 col-sm-pull-8 col-md-3 col-md-pull-9 hidden-xs">
-            <a href="https://www.mi.com/global/"><img class="img-thumbnail img-responsive center-block" src="assets/img/xiaomi-logo.png" alt=="Xiaomi Logo"></a>
-          </div>
-          <div class="col-sm-8 col-sm-push-4 col-md-9 col-md-push-3 col-xs-12">
-            <h2 class=title-school>Software Engineering Intern:<small> May 2019 - Jul 2019</small></h2>
-            <h2 class="sub-title-1">Xiaomi</h2>
-            <p class="description-01">I worked for the Big Data Team under Xiaomi Cloud Division as a Software Engineering Intern. During my 9 weeks at 
-              <a href="https://www.mi.com/global/">Xiaomi</a>, 
-              I assited my team on processing and analyzing user activity data for 240+ million monthly active Xiaomi smartphone users, 
-              such as application usage data, user behavior data and advertisement exposure data.</br></br>
-              Some of my key contributions were:
-            </p>
-            <ul>
-              <li>Utilized user profiles and activities to run Spark jobs that generate advertising targets for Xiaomi app store publishers.</li>
-              <li>Collaborated with the advertising and business department to fit advertisement deploying schedules.</li>
-              <li>Increased the advertisement view/click rates by up to 15% for several big-name applications.</li>
-            </ul>
-            <p class="description-01">For my internship, I used various Big Data technologies/tools such as 
-              <span class="bullet-title-01">Spark, Hadoop, SQL and Hive.</span> My code was mainly written in <span class="bullet-title-01">Scala</span>.
-            </p>
-          </div>
-        </div>
-
-        <hr>
-        <div class="row">
-          <div class="col-sm-4 col-sm-pull-8 col-md-3 col-md-pull-9 hidden-xs">
-            <img class="img-thumbnail img-responsive center-block" src="assets/img/uci-ics-logo.jpeg" alt="UCI ICS Logo">
-          </div>
-          <div class="col-sm-8 col-sm-push-4 col-md-9 col-md-push-3 col-xs-12">
-            <h2 class=title-school>Lab Tutor:<small> Mar 2016 - Jun 2018</small></h2>
-            <h2 class="sub-title-1">UCI School of Information & Computer Sciences</h2>
-            <p class="description-01">Throughout the four years of my undergraduate career, I worked as a <a href="http://tutors.ics.uci.edu/">Lab Tutor</a> 
-              under the School of Computer Science. I Taught 3 different levels of <span class="bullet-title-01">Python</span> programming courses in 5 separate courses with 40+ students per course, which renders a total of 200+ students taught. I Received approval ratings above 93% in student evaluations for each course, and approvals from my professors as well.</br></br>
-              As a Lab Tutor, my main responsibilities are: 
-            </p>            
-            <ul>
-              <li>Work alongside teaching assistants to teach students course materials and to help them understand lab assignments.</li>
-              <li>Guide students on how to write sturctured & efficient code, and teach them debugging skills face-to-face.</li>
-              <li>Design learning materials for professors' and tutors' reference in the future.</li>
-            </ul>
-            
-            <p class="description-01">Courses Taught:</p>
-            <ul>
-              <li><a href="https://www.ics.uci.edu/~pattis/ICS-31/handouts/syllabus/index.html">UCI ICS-31:</a> Introduction to Programming</li>
-              <li><a href="https://www.ics.uci.edu/~thornton/ics32/CourseReference.html">UCI ICS-32:</a> Programming with Software Libraries</li>
-              <li><a href="https://www.ics.uci.edu/~pattis/ICS-31/handouts/syllabus/index.html">UCI ICS-33:</a> Introduction to Programming</li>
-            </ul>
-          </div>
+      <hr>
+      <div class="row">
+        <div class="col-sm-4 col-sm-pull-8 col-md-3 col-md-pull-9 hidden-xs">
+          <img class="img-thumbnail img-responsive center-block" src="assets/img/uci-ics-logo.jpeg" alt="UCI ICS Logo">
+        </div><!-- tutor logo -->
+        <div class="col-sm-8 col-sm-push-4 col-md-9 col-md-push-3 col-xs-12">
+          <h2 class=title-school>Lab Tutor:<small> Mar 2016 - Jun 2018</small></h2>
+          <h2 class="sub-title-1">UCI School of Information & Computer Sciences</h2>
+          <p class="description-01">Throughout the four years of my undergraduate career, I worked as a <a href="http://tutors.ics.uci.edu/">Lab Tutor</a> 
+            under the School of Computer Science. I Taught 3 different levels of <span class="bullet-title-01">Python</span> programming courses in 5 separate courses with 40+ students per course, which renders a total of 200+ students taught. I Received approval ratings above 93% in student evaluations for each course, and approvals from my professors as well.</br></br>
+            As a Lab Tutor, my main responsibilities are: 
+          </p>            
+          <ul>
+            <li>Work alongside teaching assistants to teach students course materials and to help them understand lab assignments.</li>
+            <li>Guide students on how to write sturctured & efficient code, and teach them debugging skills face-to-face.</li>
+            <li>Design learning materials for professors' and tutors' reference in the future.</li>
+          </ul>
           
-        </div>
+          <p class="description-01">Courses Taught:</p>
+          <ul>
+            <li><a href="https://www.ics.uci.edu/~pattis/ICS-31/handouts/syllabus/index.html">UCI ICS-31:</a> Introduction to Programming</li>
+            <li><a href="https://www.ics.uci.edu/~thornton/ics32/CourseReference.html">UCI ICS-32:</a> Programming with Software Libraries</li>
+            <li><a href="https://www.ics.uci.edu/~pattis/ICS-31/handouts/syllabus/index.html">UCI ICS-33:</a> Introduction to Programming</li>
+          </ul>
+        </div><!-- tutor description -->
+        
+      </div>
+    </div>
 
-      <!-- FOOTER -->
+    <div class="container skills">
+      <div id="skills-scroll"></div>
+      <div class="rectangle-skills"></div>
+      <h1>Skills</h1>
+      <p class="lead">As of June 2020, I am working at Hulu as a Software Engineering Intern. My latest Industry experience was 
+        Software Engineering Intern at Xiaomi.
+      </p>
+      <div class="skills-div">
+        <h2 class=title-school>Programming Languages</h2>
+        <div class="row">
+          <div class="col-12 col-lg-2">
+            <img class="img-fluid" src="assets/img/skills-icons/python-icon.png" alt="Generic placeholder image" width="140" height="140">
+            <h3 class="skills-title">Python</h3>
+          </div><!-- /.col-lg-4 -->
+          <div class="col-12 col-lg-2">
+            <img class="img-fluid" src="assets/img/skills-icons/swift-icon.png" alt="Generic placeholder image" width="140" height="140">
+            <h3 class="skills-title">Swift</h3>
+          </div><!-- /.col-lg-4 -->
+          <div class="col-12 col-lg-2">
+            <img class="img-fluid" src="assets/img/skills-icons/javascript-icon.png" alt="Generic placeholder image" width="140" height="140">
+            <h3 class="skills-title">JavaScript</h3>
+          </div><!-- /.col-lg-4 -->
+          <div class="col-12 col-lg-2">
+            <img class="img-fluid" src="assets/img/skills-icons/java-icon.png" alt="Generic placeholder image" width="140" height="140">
+            <h3 class="skills-title">Java</h3>
+          </div><!-- /.col-lg-4 -->
+          <div class="col-12 col-lg-2">
+            <img class="img-fluid" src="assets/img/skills-icons/scala-icon.jpeg" alt="Generic placeholder image" width="140" height="140">
+            <h3 class="skills-title">Scala</h3>
+          </div><!-- /.col-lg-4 -->
+          <div class="col-12 col-lg-2">
+            <img class="img-fluid" src="assets/img/skills-icons/c-icon.png" alt="Generic placeholder image" width="140" height="140">
+            <h3 class="skills-title">C</h3>
+          </div><!-- /.col-lg-4 -->
+          <div class="col-12 col-lg-2">
+            <img class="img-fluid" src="assets/img/skills-icons/c++-icon.png" alt="Generic placeholder image" width="140" height="140">
+            <h3 class="skills-title">C++</h3>
+          </div><!-- /.col-lg-4 -->
+          <div class="col-12 col-lg-2">
+            <img class="img-fluid" src="assets/img/skills-icons/matlab-icon.png" alt="Generic placeholder image" width="140" height="140">
+            <h3 class="skills-title">MATLAB</h3>
+          </div><!-- /.col-lg-4 -->
+          
+        </div><!-- /.row -->
+      </div><!-- /.skills-languages -->
+        
 
+
+      <div class="skills-div">
+        <h2 class=title-school></br>Technologies - Web Development</h2>
+        <div class="row">
+          <div class="col-12 col-lg-2">
+            <img class="img-fluid" src="assets/img/skills-icons/nodejs-icon.png" alt="Generic placeholder image" width="140" height="140">
+            <h3 class="skills-title">Node.js</h3>
+          </div><!-- /.col-lg-4 -->
+          <div class="col-12 col-lg-2">
+            <img class="img-fluid" src="assets/img/skills-icons/react-icon.png" alt="Generic placeholder image" width="140" height="140">
+            <h3 class="skills-title">React.js</h3>
+          </div><!-- /.col-lg-4 -->
+          <div class="col-12 col-lg-2">
+            <img class="img-fluid" src="assets/img/skills-icons/express-icon.png" alt="Generic placeholder image" width="140" height="140">
+            <h3 class="skills-title">Express.js</h3>
+          </div><!-- /.col-lg-4 -->
+          <div class="col-12 col-lg-2">
+            <img class="img-fluid" src="assets/img/skills-icons/django-icon.png" alt="Generic placeholder image" width="140" height="140">
+            <h3 class="skills-title">Django</h3>
+          </div><!-- /.col-lg-4 -->
+          <div class="col-12 col-lg-2">
+            <img class="img-fluid" src="assets/img/skills-icons/html-icon.png" alt="Generic placeholder image" width="140" height="140">
+            <h3 class="skills-title">HTML5</h3>
+          </div><!-- /.col-lg-4 -->
+          <div class="col-12 col-lg-2">
+            <img class="img-fluid" src="assets/img/skills-icons/css-icon.png" alt="Generic placeholder image" width="140" height="140">
+            <h3 class="skills-title">CSS</h3>
+          </div><!-- /.col-lg-4 -->
+        </div><!-- /.row -->
+      </div><!-- /.skills-webdev -->
+      
+      </hr>
+      <div class="skills-div">
+        <h2 class=title-school></br>Technologies - Back-end & Database</h2>
+        <div class="row">
+          <div class="col-12 col-lg-2">
+            <img class="img-fluid" src="assets/img/skills-icons/firebase-icon.png" alt="Generic placeholder image" width="140" height="140">
+            <h3 class="skills-title">Firebase</h3>
+          </div><!-- /.col-lg-4 -->
+          <div class="col-12 col-lg-2">
+            <img class="img-fluid" src="assets/img/skills-icons/mongodb-icon.png" alt="Generic placeholder image" width="140" height="140">
+            <h3 class="skills-title">MongoDB</h3>
+          </div><!-- /.col-lg-4 -->
+          <div class="col-12 col-lg-2">
+            <img class="img-fluid" src="assets/img/skills-icons/parse-icon.png" alt="Generic placeholder image" width="140" height="140">
+            <h3 class="skills-title">Parse</h3>
+          </div><!-- /.col-lg-4 -->
+        </div><!-- /.row -->
+      </div><!-- /.skills-backend-db -->
+
+      <div class="skills-div">
+        <h2 class=title-school></br>Technologies - Data</h2>
+        <div class="row">
+          <div class="col-12 col-lg-2">
+            <img class="img-fluid" src="assets/img/skills-icons/hadoop-icon.png" alt="Generic placeholder image" width="140" height="140">
+            <h3 class="skills-title">Hadoop</h3>
+          </div><!-- /.col-lg-4 -->
+          <div class="col-12 col-lg-2">
+            <img class="img-fluid" src="assets/img/skills-icons/spark-icon.png" alt="Generic placeholder image" width="140" height="140">
+            <h3 class="skills-title">Spark</h3>
+          </div><!-- /.col-lg-4 -->
+          <div class="col-12 col-lg-2">
+            <img class="img-fluid" src="assets/img/skills-icons/sql-icon.png" alt="Generic placeholder image" width="140" height="140">
+            <h3 class="skills-title">SQL</h3>
+          </div><!-- /.col-lg-4 -->
+          <div class="col-12 col-lg-2">
+            <img class="img-fluid" src="assets/img/skills-icons/hive-icon.png" alt="Generic placeholder image" width="140" height="140">
+            <h3 class="skills-title">Hive</h3>
+          </div>
+        </div><!-- /.row -->
+      </div><!-- /.skills-data -->
+      
+      <div class="skills-div">
+        <h2 class=title-school></br>Technologies - IDE</h2>
+        <div class="row">
+          <div class="col-12 col-lg-2">
+            <img class="img-fluid" src="assets/img/skills-icons/xcode-icon.png" alt="Generic placeholder image" width="140" height="140">
+            <h3 class="skills-title">Xcode</h3>
+          </div><!-- /.col-lg-4 -->
+          <div class="col-12 col-lg-2">
+            <img class="img-fluid" src="assets/img/skills-icons/pycharm-icon.png" alt="Generic placeholder image" width="140" height="140">
+            <h3 class="skills-title">PyCharm</h3>
+          </div><!-- /.col-lg-4 -->
+          <div class="col-12 col-lg-2">
+            <img class="img-fluid" src="assets/img/skills-icons/intellij-icon.png" alt="Generic placeholder image" width="140" height="140">
+            <h3 class="skills-title">Intellij IDEA</h3>
+          </div><!-- /.col-lg-4 -->
+          
+        </div><!-- /.row -->
+      </div>
+
+      
     </div>
 
     <div>
@@ -230,11 +371,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
   
-    <script>
-      $(document).ready(function(){
-        $('body').scrollspy({target: ".navbar", offset: 50});   
-      });
-    </script>
   </body>
 
   
