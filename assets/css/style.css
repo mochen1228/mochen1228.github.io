@@ -90,6 +90,10 @@ a {
   font-weight: bold;
 }
 
+.bullet-highlight-01 {
+  color: #1ee884;
+}
+
 .description-01 {
   margin-top: 10px;
 }
@@ -125,6 +129,14 @@ a {
   margin-top: 30px;
 }
 
+.rectangle-projects{
+  width:147px;
+  height:5px;
+  background:#1ee884;
+  margin-bottom: 3px;
+  margin-top: 30px;
+}
+
 .img-thumbnail {
   border-radius: 20px;
   border: 0;
@@ -137,6 +149,7 @@ a {
   padding-left: 4px;
 }
 
+
 #education-scroll {
   padding-bottom: 40px;
   margin-top: -40px;
@@ -147,10 +160,16 @@ a {
   margin-top: -40px;
 }
 
+#projects-scroll {
+  padding-bottom: 40px;
+  margin-top: -40px;
+}
+
 #skills-scroll {
   padding-bottom: 40px;
   margin-top: -40px;
 }
+
 
 .skills-title {
   font-size: 22px;
